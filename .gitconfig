@@ -1,0 +1,33 @@
+[core]
+	excludesfile = ~/.gitignore
+	editor = \"C:/Program Files/vim73/vim.exe\"
+	autocrlf = true
+	safecrlf = warn
+	whitespace = -trailing-space,-space-before-tab
+	askpass = git-gui--askpass
+[user]
+	name = Jeremy Jarrell
+	email = jjarrell@matrixformedia.com
+[color]
+	ui = auto
+[merge]
+	tool = p4merge
+[mergetool "p4merge"]
+	cmd = \"c:/Program Files/Perforce/p4merge.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+	keepTemporaries = false
+	trustExitCode = false
+[mergetool]
+	keepBackup = false
+[diff]
+	guitool = p4merge
+	tool = p4merge
+[difftool "p4merge"]
+	cmd = \"c:/Program Files/Perforce/p4merge.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[github]
+	user = jeremyjarrell
+	token = d2fa4fd661575c716753be9ea6610083
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)'>
+	iteration = log --author=jjarrell@matrixformedia.com --since={2.weeks.ago}	
+[push]
+	default=tracking
