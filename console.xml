@@ -22,7 +22,7 @@
 	</console>
 	<appearance>
 		<font name="DejaVu Sans Mono" size="10" bold="0" italic="0" smoothing="0">
-			<color use="0" r="0" g="0" b="0"/>
+			<color use="0" r="255" g="0" b="128"/>
 		</font>
 		<window title="Console" icon="" use_tab_icon="1" use_console_title="0" show_cmd="1" show_cmd_tabs="1" use_tab_title="1" trim_tab_titles="20" trim_tab_titles_right="0"/>
 		<controls show_menu="1" show_toolbar="1" show_statusbar="1" show_tabs="1" hide_single_tab="1" show_scrollbars="1" flat_scrollbars="0" tabs_on_bottom="0"/>
@@ -30,7 +30,7 @@
 			<selection_color r="255" g="255" b="255"/>
 		</styles>
 		<position x="-1" y="-1" dock="-1" snap="0" z_order="0" save_position="0"/>
-		<transparency type="0" active_alpha="255" inactive_alpha="255" r="0" g="0" b="0"/>
+		<transparency type="0" active_alpha="146" inactive_alpha="255" r="0" g="0" b="0"/>
 	</appearance>
 	<behavior>
 		<copy_paste copy_on_select="0" clear_on_copy="1" no_wrap="1" trim_spaces="1" copy_newline_char="0" sensitive_copy="1"/>
@@ -68,7 +68,6 @@
 		<hotkey ctrl="1" shift="0" alt="0" extended="1" code="45" command="copy"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="1" code="46" command="clear_selection"/>
 		<hotkey ctrl="0" shift="1" alt="0" extended="1" code="45" command="paste"/>
-		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="stopscroll"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="scrollrowup"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="scrollrowdown"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="scrollpageup"/>
@@ -90,21 +89,21 @@
 		</actions>
 	</mouse>
 	<tabs>
-		<tab title="Git Bash" icon="C:\Program Files (x86)\Git\etc\git.ico" use_default_icon="0">
-			<console shell="&quot;C:\Program Files (x86)\Git\bin\sh.exe&quot; --login -i" init_dir="c:\dev\Matrix\Matrix-Web\src" run_as_user="0" user=""/>
-			<cursor style="11" r="0" g="128" b="0"/>
-			<background type="2" r="0" g="0" b="0">
+		<tab title="VS2012">
+			<console shell="%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\VsDevCmd.bat&quot;&quot;" init_dir="C:\dev\TrackAbout\trunk"/>
+			<cursor style="0" r="0" g="128" b="0"/>
+			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
-					<tint opacity="200" r="0" g="0" b="0"/>
+					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
 		</tab>
-		<tab title="Visual Studio" icon="C:\Program Files (x86)\Microsoft Visual Studio 10.0\Setup\setup.ico" use_default_icon="0">
-			<console shell="%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat&quot;&quot; x86" init_dir="&quot;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\&quot;" run_as_user="0" user=""/>
+		<tab title="Git Bash" icon="C:\Program Files (x86)\Git\etc\git.ico">
+			<console shell="&quot;C:\Program Files (x86)\Git\bin\sh.exe&quot; --login -i" init_dir="c:\dev\Personal"/>
 			<cursor style="11" r="0" g="128" b="0"/>
-			<background type="2" r="0" g="0" b="0">
+			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
-					<tint opacity="200" r="0" g="0" b="0"/>
+					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
 		</tab>
