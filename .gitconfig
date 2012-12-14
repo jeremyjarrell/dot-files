@@ -1,6 +1,6 @@
 [core]
 	excludesfile = ~/.gitignore
-	editor = \"C:/Program Files (x86)/vim73/vim.exe\"
+	editor = \"C:/Program Files (x86)/vim/vim73/vim.exe\"
 	autocrlf = true
 	safecrlf = warn
 	whitespace = -trailing-space,-space-before-tab
