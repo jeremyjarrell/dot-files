@@ -1,13 +1,13 @@
 [core]
 	excludesfile = ~/.gitignore
-	editor = \"C:/Program Files/vim73/vim.exe\"
+	editor = \"C:/Program Files (x86)/vim73/vim.exe\"
 	autocrlf = true
 	safecrlf = warn
 	whitespace = -trailing-space,-space-before-tab
 	askpass = git-gui--askpass
 [user]
 	name = Jeremy Jarrell
-	email = jjarrell@matrixformedia.com
+	email = jeremy.jarrell@gmail.com
 [color]
 	ui = auto
 [merge]
@@ -28,6 +28,5 @@
 	token = d2fa4fd661575c716753be9ea6610083
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)'>
-	iteration = log --author=jjarrell@matrixformedia.com --since={2.weeks.ago}	
 [push]
 	default=tracking
