@@ -22,8 +22,6 @@ alias docs='open https://dev.listhub.com/3yd-network/3yd-network.html'
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 
-#ssh-add > /dev/null 2>&1
-
 export PATH=/usr/local/share/python:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/Users/jjarrell/bin/Sencha/Cmd/3.1.1.274:$PATH
