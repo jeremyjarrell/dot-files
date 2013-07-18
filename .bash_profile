@@ -18,6 +18,7 @@ alias less='less -N'
 alias jenkins='open https://dev.listhub.com/jenkins/'
 alias jira='open https://listhub.atlassian.net/secure/Dashboard.jspa'
 alias docs='open https://dev.listhub.com/3yd-network/3yd-network.html'
+alias wtf='man'
 
 export HISTSIZE=10000
 export HISTFILESIZE=10000
