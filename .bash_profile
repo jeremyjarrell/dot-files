@@ -26,6 +26,7 @@ export HISTFILESIZE=10000
 export PATH=/usr/local/share/python:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/Users/jjarrell/bin/Sencha/Cmd/3.1.1.274:$PATH
+export PATH=/Users/jjarrell/bin/gradle-1.6/bin:$PATH
 
 export SENCHA_CMD_3_0_0="/Users/jjarrell/bin/Sencha/Cmd/3.1.1.274"
 
