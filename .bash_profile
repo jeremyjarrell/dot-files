@@ -9,6 +9,12 @@ test -r /sw/bin/init.sh && . /sw/bin/init.sh
 export THREEWIDE_NETWORK_HOME=~/code/3yd-network
 source $THREEWIDE_NETWORK_HOME/utils/aws-helper-methods
 
+export GROOVY_HOME="/opt/groovy-2.1.6"
+export PATH=$PATH:$GROOVY_HOME/bin
+
+export SCALA_HOME="/opt/scala-2.10.2"
+export PATH=$PATH:$SCALA_HOME/bin
+
 # aliases
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
