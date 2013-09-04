@@ -15,6 +15,9 @@ export PATH=$PATH:$GROOVY_HOME/bin
 export SCALA_HOME="/opt/scala-2.10.2"
 export PATH=$PATH:$SCALA_HOME/bin
 
+export M2_HOME="/opt/apache-maven-3.1.0"
+export PATH=$PATH:$M2_HOME/bin
+
 # aliases
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
