@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#export PROMPT_COMMAND="echo -n [$(git br | grep '*' | cut -d ' ' -f 2)]"
+PS1="\W $ "
+#PS1="$ "
+
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export AWS_IAM_HOME="/usr/local/opt/aws-iam-tools/jars"
 export PATH=$PATH:$HOME/bin:/usr/local/mysql/bin:$HOME/Wireshark
@@ -17,6 +21,9 @@ export PATH=$PATH:$SCALA_HOME/bin
 
 export M2_HOME="/opt/apache-maven-3.1.0"
 export PATH=$PATH:$M2_HOME/bin
+
+export GRADLE_HOME="/opt/gradle-1.7"
+export PATH=$PATH:$GRADLE_HOME/bin
 
 # aliases
 alias grep='grep --color=auto'
