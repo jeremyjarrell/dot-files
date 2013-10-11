@@ -24,7 +24,7 @@
 
 [alias]
 	ci = commit
- 	a = add -A
+ 	a = add --all :/
  	co = checkout
  	cob = checkout -b
  	st = status
