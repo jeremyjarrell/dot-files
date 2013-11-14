@@ -1,10 +1,7 @@
 #!/bin/bash
 
-#export PROMPT_COMMAND="echo -n [$(git br | grep '*' | cut -d ' ' -f 2)]"
 PS1="\W $ "
-#PS1="$ "
 
-export JAVA_HOME="$(/usr/libexec/java_home)"
 export AWS_IAM_HOME="/usr/local/opt/aws-iam-tools/jars"
 export PATH=$PATH:$HOME/bin:/usr/local/mysql/bin:$HOME/Wireshark
 
@@ -13,20 +10,11 @@ test -r /sw/bin/init.sh && . /sw/bin/init.sh
 export THREEWIDE_NETWORK_HOME=~/code/3yd-network
 source $THREEWIDE_NETWORK_HOME/utils/aws-helper-methods
 
-export GROOVY_HOME="/opt/groovy-2.1.6"
-export PATH=$PATH:$GROOVY_HOME/bin
-
 export SCALA_HOME="/opt/scala-2.10.2"
 export PATH=$PATH:$SCALA_HOME/bin
 
 export M2_HOME="/opt/apache-maven-3.1.0"
 export PATH=$PATH:$M2_HOME/bin
-
-export GRADLE_HOME="/opt/gradle-1.7"
-export PATH=$PATH:$GRADLE_HOME/bin
-
-export GRAILS_HOME="/opt/grails-2.3.0"
-export PATH=$PATH:$GRAILS_HOME/bin
 
 export TOMCAT_HOME="/Library/Tomcat"
 
@@ -59,3 +47,6 @@ ruby -r webrick -e "s = WEBrick::HTTPServer.new(:Port => $port, :DocumentRoot =>
 
 function mkcd { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/jjarrell/.gvm/bin/gvm-init.sh" ]] && source "/Users/jjarrell/.gvm/bin/gvm-init.sh"
