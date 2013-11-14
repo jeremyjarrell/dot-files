@@ -28,6 +28,8 @@ export PATH=$PATH:$GRADLE_HOME/bin
 export GRAILS_HOME="/opt/grails-2.3.0"
 export PATH=$PATH:$GRAILS_HOME/bin
 
+export TOMCAT_HOME="/Library/Tomcat"
+
 # aliases
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
