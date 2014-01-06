@@ -18,6 +18,11 @@ export PATH=$PATH:$M2_HOME/bin
 
 export TOMCAT_HOME="/Library/Tomcat"
 
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+source ~/git-flow-completion.bash
+
 # aliases
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
