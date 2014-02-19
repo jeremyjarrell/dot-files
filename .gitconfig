@@ -33,4 +33,4 @@
  	ps = push
 	br = branch
 	mg = merge
-	lg = log --pretty=oneline --graph
+	lg = log --pretty=medium --graph
