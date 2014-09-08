@@ -18,6 +18,8 @@ export PATH=$PATH:$M2_HOME/bin
 
 export TOMCAT_HOME="/Library/Tomcat"
 
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
