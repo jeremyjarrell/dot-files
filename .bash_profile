@@ -7,8 +7,8 @@ export PATH=$PATH:$HOME/bin:/usr/local/mysql/bin:$HOME/Wireshark
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
 
-export THREEWIDE_NETWORK_HOME=~/code/3yd-network
-source $THREEWIDE_NETWORK_HOME/utils/aws-helper-methods
+export LH_TOOLS_HOME=~/code/lh_tools
+source $LH_TOOLS_HOME/aws/aws-helper-methods
 
 export SCALA_HOME="/opt/scala-2.10.2"
 export PATH=$PATH:$SCALA_HOME/bin
@@ -30,6 +30,10 @@ alias egrep='egrep --color=auto'
 alias ls='ls -lhaG'
 alias cls='clear'
 alias less='less -N'
+alias jenkins='open https://dev.listhub.com/jenkins/'
+alias jira='open https://listhub.atlassian.net/secure/Dashboard.jspa'
+alias docs='open https://dev.listhub.com/3yd-network/3yd-network.html'
+alias wtf='man'
 
 export HISTSIZE=10000
 export HISTFILESIZE=10000
@@ -40,8 +44,6 @@ export PATH=/Users/jjarrell/bin/Sencha/Cmd/3.1.1.274:$PATH
 
 export SENCHA_CMD_3_0_0="/Users/jjarrell/bin/Sencha/Cmd/3.1.1.274"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 function serve {
 port="${1:-3000}"
 ruby -r webrick -e "s = WEBrick::HTTPServer.new(:Port => $port, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start"
@@ -49,6 +51,7 @@ ruby -r webrick -e "s = WEBrick::HTTPServer.new(:Port => $port, :DocumentRoot =>
 
 function mkcd { mkdir -p "$@" && eval cd "\"\$$#\""; }
 
-
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/jjarrell/.gvm/bin/gvm-init.sh" ]] && source "/Users/jjarrell/.gvm/bin/gvm-init.sh"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
