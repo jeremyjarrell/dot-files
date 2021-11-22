@@ -1,11 +1,5 @@
 #!/bin/bash
 
-PS1="\W $ "
-
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
-
 # aliases
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
